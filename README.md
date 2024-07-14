@@ -6,7 +6,7 @@ Using the Global Power Plant Database, I set out to answer these questions. Usin
 
 
 The first chart is a map showing each power plant in the United States, color-coded by its primary fuel type. The size of each plant's dot represents the capacity of the plant.
-![Screenshot 2024-07-14 at 1 43 23 PM](https://github.com/user-attachments/assets/85862306-f208-4e22-ad5d-197750fb393a)
+![Screenshot 2024-07-14 at 2 10 33 PM](https://github.com/user-attachments/assets/78a2b4ce-d774-432b-bc1a-38c255e2a6ca)
 Link: https://public.tableau.com/views/USPowerPlantsPrimaryFuelsCapacity2019/USPowerPlantsPrimaryFuelsCapacity2019?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 The second chart is a simple bar chart, showing the number of plants of each primary fuel type (solar takes the lead here).
