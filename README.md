@@ -1,4 +1,29 @@
-# US_Power_Plants
-Exploratory analysis of power plants in the United States.
+# Power Plants in the United States
 
-<div class='tableauPlaceholder' id='viz1720989737595' style='position: relative'><noscript><a href='#'><img alt='Number of Plants per Primary Fuel Type (2019) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USPowerPlantsperPrimaryFuelType2019&#47;NumberofPlantsperPrimaryFuelType2019&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='USPowerPlantsperPrimaryFuelType2019&#47;NumberofPlantsperPrimaryFuelType2019' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USPowerPlantsperPrimaryFuelType2019&#47;NumberofPlantsperPrimaryFuelType2019&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1720989737595');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+Where are power plants in the United States located? How many are there? What types of fuel do they use? Which plants have the most capacity?
+
+Using the Global Power Plant Database, I set out to answer these questions. Using postgreSQL and VS Code, I queried the data. Then, I used Tableau to visualize three charts. 
+
+
+The first chart is a map showing each power plant in the United States, color-coded by its primary fuel type. The size of each plant's dot represents the capacity of the plant.
+![Screenshot 2024-07-14 at 1 43 23 PM](https://github.com/user-attachments/assets/85862306-f208-4e22-ad5d-197750fb393a)
+Link: https://public.tableau.com/views/USPowerPlantsPrimaryFuelsCapacity2019/USPowerPlantsPrimaryFuelsCapacity2019?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+The second chart is a simple bar chart, showing the number of plants of each primary fuel type (solar takes the lead here).
+![Screenshot 2024-07-14 at 1 43 34 PM](https://github.com/user-attachments/assets/38af5a01-8d2e-4dfb-9d4f-b2ce282355f2)
+Link: https://public.tableau.com/views/USPowerPlantsperPrimaryFuelType2019/NumberofPlantsperPrimaryFuelType2019?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+The third chart is another simple bar chart, this time showing the median capacity for plants of each primary fuel type (nuclear takes the lead this time).
+![Screenshot 2024-07-14 at 1 43 49 PM](https://github.com/user-attachments/assets/2f22f27c-69fb-4d5b-b5bb-f2c3551283cb)
+Link: https://public.tableau.com/views/USMedianPowerPlantCapacityperPrimaryFuelType2019/MedianCapacityperPrimaryFuelType2019?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+**So what? OK, here are a few takeaways:**
+- The map is a great resource (in my opinion) to check out what power plants exist near you. (How big are those plants? What fuel do they use?)
+- Solar plants are the most common in the U.S, but they also have the lowest median capacity.
+- Nuclear plants, meanwhile, are relatively rare, but have the highest median capacity.
+- The highest median capacity plants that don't require fossil fuels (and aren't nuclear plants) are wind plants.
+
+
+An important note: each power plant can have more than one fuel type. (Most plants only have one fuel type, but many have more than one.) The primary fuel type, according to the GPPD, represents the fuel type used the most by each power plant.
+
+Data source: Global Energy Observatory, Google, KTH Royal Institute of Technology in Stockholm, Enipedia, World Resources Institute. 2019. Global Power Plant Database. Published on Resource Watch and Google Earth Engine. http://resourcewatch.org/ https://earthengine.google.com/
