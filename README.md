@@ -16,7 +16,7 @@ First, we have a map showing each power plant in the United States, color-coded 
 [Click here to interact with the map!](https://public.tableau.com/views/USPowerPlantsPrimaryFuelsCapacity2019/USPowerPlantsPrimaryFuelsCapacity2019?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
   
-Second, have a simple bar chart, showing the number of plants of each primary fuel type (solar takes the lead here).
+Second, we have a simple bar chart, showing the number of plants of each primary fuel type (solar takes the lead here).
 ![Screenshot 2024-07-14 at 1 43 34 PM](https://github.com/user-attachments/assets/38af5a01-8d2e-4dfb-9d4f-b2ce282355f2)
 [Link.](https://public.tableau.com/views/USPowerPlantsperPrimaryFuelType2019/NumberofPlantsperPrimaryFuelType2019?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
